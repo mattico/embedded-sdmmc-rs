@@ -16,5 +16,9 @@ byteorder = { version = "1", default-features = false }
 nb = "0.1"
 log = "0.4"
 
+[dependencies.stm32h7xx-hal]
+path = "../stm32h7xx-hal"
+features = ["stm32h743v", "rt", "sdmmc"]
+
 [dev-dependencies]
 env_logger = "0.7"
